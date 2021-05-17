@@ -1,38 +1,119 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
 .App {
-  text-align: center;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: rgba(49, 42, 42, 0.85);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logIn {
+  width: 600px;
+  height: 350px;
+  border: 5px solid #0091ff;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.logIn input {
+  margin: 10px;
+  width: 200px;
+  height: 40px;
+  border: 2px solid #0091ff;
+  background-color: transparent;
+  padding-left: 10px;
+  color: #fff;
+  font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logIn input:focus {
+  outline: none;
+}
+
+.logIn button {
+  padding: 10px 50px;
+  background-color: #0091ff;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+.logIn button:hover {
+  cursor: pointer;
+  background-color: #0060aa;
+}
+
+.chatContainer {
+  width: 600px;
+  height: 450px;
+  border: 5px solid #0091ff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.messages {
+  flex: 80%;
+  width: 100%;
+}
+
+.messageInputs {
+  flex: 20%;
+  width: 100%;
+  display: flex;
+}
+
+.messageInputs input {
+  flex: 80%;
+  border-top: 5px solid #0091ff;
+  padding-left: 20px;
+  color: #000;
+  font-size: 20px;
+}
+
+.messageInputs button {
+  flex: 20%;
+  background-color:  #0091ff;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+.messageItem {
+  width: 400px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 10px;
+  padding: 5px 5px;
+  font-size: 20px;
+  background-color: #0091ff;
+  display: flex;
+  flex-direction: column;
+}
+
+.messageItem p {
+  margin: 0;
+}
+
+.author {
+  display: block;
+  font-weight: 700;
+  color: #3bf1eb;
+  font-size: 17px;
+}
+
+#you {
+  margin-left: 10px;
+}
+
+#other {
+  margin-right: 20px;
+  margin-left: auto;
 }
